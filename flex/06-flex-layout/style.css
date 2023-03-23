@@ -1,21 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* * {
+  border: 1px red solid; 
+} */
+
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: column; 
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  min-height: 100vh;
 }
 
 img {
   width: 600px;
+
 }
+
+ul { 
+  list-style-type: none 
+}
+
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
 
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 input {
@@ -24,4 +48,71 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+  flex: 1; 
 }
+
+.container {
+  display: flex; 
+  flex-direction: column; 
+  flex: 1; 
+  align-items: stretch; 
+}
+
+.header {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  padding: 15px; 
+}
+
+
+.content {
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  display: flex; 
+  flex: 1; 
+}
+
+.footer {
+  flex-shrink: 1; 
+  display: flex; 
+  align-items: stretch; 
+  justify-content: space-between; 
+  background-color: #eeeeee; 
+  padding: 1px; 
+  margin-top: auto; 
+}
+
+.header > .left-links {
+  display: flex;  
+  align-items: flex-end; 
+  padding: 1px; 
+  gap: 20px; 
+}
+
+.header > .right-links {
+  display: flex; 
+  padding: 1px; 
+  gap: 20px; 
+}
+
+.footer > .left-links {
+  display: flex; 
+  justify-content: flex-start; 
+  flex: 1; 
+  padding: 1px; 
+  gap: 20px; 
+}
+
+.footer > .right-links { 
+  display: flex; 
+  justify-content: flex-end; 
+  flex: 1; 
+  padding: 1px; 
+  gap: 20px; 
+
+}
+
+
+/* Does this display properly in other media query sizes in Chrome Dev Tools? Check */
